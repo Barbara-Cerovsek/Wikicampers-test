@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div class="container">
+           
+            <h1 class="mt-4">Résultats de recherche</h1>
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">Marque</th>
+                        <th scope="col">Modèle</th>
+                        <th scope="col">Prix par jour (€)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for vehicle in filterVehicles %}
+                            <tr class="table">
+                                <td>{{ vehicle.brand }}</td>
+                                <td>{{ vehicle.model }}</td>
+                                <td>{{ vehicle.price }}</td>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

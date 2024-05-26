@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Véhicules
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+		<h1>Les véhicules</h1>
+		<a href="{{ path('vehicle.create') }}" class="btn btn-info my-2">Créer un véhicule</a>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Marque</th>
+					<th scope="col">Modèle</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for vehicle in vehicles %}
+					<tr class="table">
+						<td>{{ vehicle.brand }}</td>
+						<td>{{ vehicle.model }}</td>
+					{% endfor %}
+				</tbody>
+			</tbody>
+		</table>
+	</div>
+
+{% endblock %}
+

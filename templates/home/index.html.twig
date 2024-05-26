@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Wikicampers
+{% endblock %}
+
+{% block body %}
+	<div class="container my-3">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 mb-4">
+				<div class="card h-80">
+					<img class="card-img-top" src="{{ asset('images/camper-van-4.jpg') }}" alt="camper-van-4">
+					<div class="card-body">
+						<h5 class="card-title">Nos véhicules</h5>
+						<a href="/vehicule" class="stretched-link"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12 col-md-4 mb-4">
+				<div class="card h-80">
+					<img class="card-img-top" src="{{ asset('images/camper-van-8.jpg') }}" alt="camper-van-8">
+					<div class="card-body">
+						<h5 class="card-title">Disponibilités</h5>
+						<a href="/disponibilite" class="stretched-link"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12 col-md-4 mb-4">
+				<div class="card h-80">
+					<img class="card-img-top" src="{{ asset('images/camper-van-6.jpg') }}" alt="camper-van-6">
+					<div class="card-body">
+						<h5 class="card-title">Recherche</h5>
+						<a href="/disponibilite/recherche" class="stretched-link"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
