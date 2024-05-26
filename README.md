@@ -38,4 +38,4 @@ Une fois le projet cloné, dans le fichier .env, choisissez le type de votre bas
 
 ## Démarrez le serveur (cela va dépendre de votre configuration)
 
- `symfony server:start` ou `phhp -S localhost:8000 -t public`# Wikicampers
+ `symfony server:start` ou `phhp -S localhost:8000 -t public`
